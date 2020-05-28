@@ -1,6 +1,7 @@
 body{
     text-align: center;
-}
+    font: 400 14px 'Quicksand', sans-serif;
+  }
 
 
 
@@ -33,14 +34,23 @@ body{
   }
 
 
+  .order-row>.order-tile-half {
+    flex-grow: 1;
+    width: 50%;
+    height: 100px;
+  }
+
+
 
 
   
   
-  .order-row>.order-tile:nth-child(even) {
+  .order-row>.order-tile:nth-child(even),
+  .order-row>.order-tile-half:nth-child(even) {
     background: #fddab4;
   }
   
-  .order-row>.order-tile:nth-child(odd) {
+  .order-row>.order-tile:nth-child(odd),
+  .order-row>.order-tile-half:nth-child(odd) {
     background: #b9ebff;
   }
