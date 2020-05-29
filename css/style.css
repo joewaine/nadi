@@ -10,7 +10,9 @@ body{
 
 
 
-background-image: url(../img/bigbig.jpg)
+background-image: url(../img/bigbig.jpg);
+
+padding-top: 70px;
 
   }
 
@@ -19,6 +21,8 @@ background-image: url(../img/bigbig.jpg)
     background: white;
     width: 70%;
     margin: 50px auto 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
 
@@ -73,3 +77,14 @@ background-image: url(../img/bigbig.jpg)
   .order-row>.order-tile-half:nth-child(odd) {
     background: #b9ebff;
   }
+
+
+
+  .nav-style{
+    background: #b9ebff;
+    text-align: center;
+    position: fixed;
+width: 100%;
+top: 0;
+z-index: 10;
+}
