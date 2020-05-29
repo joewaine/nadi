@@ -1,6 +1,24 @@
 body{
     text-align: center;
-    font: 400 14px 'Quicksand', sans-serif;
+    font: 400 14px 'Quicksand', sans-serif !important;
+
+
+
+    --sans-regular-font: 'Quicksand', sans-serif !important;
+    --sans-medium-font: 'Quicksand', sans-serif !important;
+    --sans-bold-font: 'Quicksand', sans-serif !important;
+
+
+
+background-image: url(../img/bigbig.jpg)
+
+  }
+
+
+  .container{
+    background: white;
+    width: 70%;
+    margin: 50px auto 0;
   }
 
 
@@ -11,12 +29,13 @@ body{
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    font: 400 14px 'Quicksand', sans-serif !important;
 }
 
 
 .order-row{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
