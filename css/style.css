@@ -88,3 +88,28 @@ width: 100%;
 top: 0;
 z-index: 10;
 }
+
+
+
+
+
+.owl-prev{
+  position: absolute;
+  left: 10px;
+  font-size: 40px;
+}
+
+
+.owl-next{
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+}
+
+
+
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+  font-size: 40px !important;
+}
