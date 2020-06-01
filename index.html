@@ -151,14 +151,6 @@
     <!-- caro -->
 
 
-
-
-
-
-
-
-
-
     <br>
 
 
@@ -308,7 +300,7 @@
             Cocktail Kit
           </h3>
 
-          <a href="https://www.trycaviar.com/m/mamnoon-street-6597" target="_blank">order</a>
+          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
         </div>
       </div>
 
@@ -322,7 +314,7 @@
             Growler
           </h3>
 
-          <a href="https://www.trycaviar.com/m/mamnoon-street-6597" target="_blank">order</a>
+          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
         </div>
       </div>
 
@@ -336,7 +328,7 @@
             Personal Cocktail
           </h3>
 
-          <a href="https://www.trycaviar.com/m/mamnoon-street-6597" target="_blank">order</a>
+          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
         </div>
       </div>
 
@@ -352,7 +344,7 @@
           </h3>
 
 
-          <a href="https://www.trycaviar.com/m/mamnoon-street-6597" target="_blank">order</a>
+          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
         </div>
       </div>
 
@@ -507,8 +499,16 @@
             Merch Item
           </h3>
 
-          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
 
+          <button class="snipcart-add-item"
+          data-item-id="starry-night"
+          data-item-price="79.99"
+          data-item-url="/paintings/starry-night"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/assets/images/starry-night.jpg"
+          data-item-name="The Starry Night">
+          buy it now
+          </button>
         </div>
       </div>
 
@@ -521,7 +521,18 @@
             Merch Item
           </h3>
 
-          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
+
+          <button class="snipcart-add-item"
+          data-item-id="starry-night"
+          data-item-price="79.99"
+          data-item-url="/paintings/starry-night"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/assets/images/starry-night.jpg"
+          data-item-name="The Starry Night">
+          buy it now
+          </button>
+
+
 
         </div>
       </div>
@@ -536,9 +547,17 @@
           </h3>
 
 
+          <button class="snipcart-add-item"
+          data-item-id="starry-night"
+          data-item-price="79.99"
+          data-item-url="/paintings/starry-night"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/assets/images/starry-night.jpg"
+          data-item-name="The Starry Night">
+          buy it now
+          </button>
 
 
-          <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
         </div>
       </div>
 
@@ -558,45 +577,64 @@
 
 
 
+    <h1>testimonials</h1>
+
+    <div class="owl-carousel testimonials">
+
+      <div>
+        <div>
+
+          <img src="img/user-icon-head.png" alt="one" />
+
+          <h3>
+            testimonial 1
+          </h3>
+                - clientele
+
+        </div>
+      </div>
+
+
+      <div>
+        <div>
+
+          <img src="img/user-icon-head.png" alt="one" />
+
+          <h3>
+            testimonial 2
+          </h3>
+                - clientele
+
+        </div>
+      </div>
+
+
+      <div>
+        <div>
+
+          <img src="img/user-icon-head.png" alt="one" />
+
+          <h3>
+            testimonial 3
+          </h3>
+                - clientele
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    
     <!-- 
-bar pantry pickuip
-
-
-    <div class="order-row">
-
-      <div class="order-tile-half">
-        <a href="https://www.trycaviar.com/m/mamnoon-628" target="_blank">MAMNOON MENU</a>
-      </div>
-      <div class="order-tile-half">
-        <a href="https://www.trycaviar.com/m/mamnoon-street-6597" target="_blank">MAMNOON STREET FULL MENU</a>
-      </div>
-    </div>
-    <h1>Bar / Pantry Pickup</h1>
-    <div class="order-row">
-      <div class="order-tile">
-        <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
-      </div>
-
-    </div>
-
-
-    <h1>Merch</h1>
-    <div class="order-row">
-      <div class="order-tile">
-        <button class='upserve-olo-button upserve-olo-opener'>Order Online</button>
-      </div>
-
-    </div>
-
-
-
-
     pre orders / gift cards / experience
-
-
-
     Joinus
-
     seven rooms -->
 
   </div>
@@ -647,7 +685,7 @@ bar pantry pickuip
 
 
 
-      $(".owl-nadi, .testimonials").owlCarousel({
+      $(".owl-nadi, .testimonials, .snipcart").owlCarousel({
         nav: true,
         dots: true,
         loop: true,
