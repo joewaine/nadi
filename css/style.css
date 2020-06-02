@@ -137,16 +137,69 @@ z-index: 10;
 
 .userinfo{
   position: fixed;
-  top: 119px;
-  right: 0;
-  background: pink;
-  padding: 100px;
+  top: 0;
+
+
+  right: -270px;
+  background-color: pink;
+
+  background-image: url(../img/left-arrow.png);
+
+
+  padding: 0 100px;
   width: 100px;
+
+
+  transition: all .5s ease;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+  height: 100%;
+
+}
+
+.userinfo.expanded{
+  background-image: url(../img/right-arrow.png);
+  right: 0;
 }
 
 
+.userinfo .expander{
+  position: absolute;
+  top: 0;
+
+  left: 0;
+}
+
+
+.map-container{
+  position: fixed;
+  top: 0;
+
+  width: 50%;
+  height: 100%;
+  background: green; 
+  transition: all .5s ease;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(../img/right-arrow.png);
+  left: calc(-50% + 120px);
+}
+
+
+.map-container.expanded{
+  background-image: url(../img/left-arrow.png);
+  left: 0;
+}
 
 
 .addlike.liked{
 background: red;
+}
+
+
+#map {
+  height: 90%;
 }

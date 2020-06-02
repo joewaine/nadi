@@ -57,14 +57,28 @@
 
     <h1>Nadi Mama</h1>
 
-<button class="clearlocal">reset local</button>
+
+
+
+<div class="map-container"> 
+
+
+
+  <input id="pac-input" class="controls" type="text"
+  placeholder="Enter a location">	
+      <div id="map"></div>
+
+<button style="position: absolute;bottom: 0;right: 0;">map container button</button>
+  </div>
+
+
+
+<div class="userinfo">
 
 
 
 
-
-
-<div class="userinfo"></div>
+</div>
 
 
   </nav>
@@ -170,32 +184,6 @@
     <br>
 
 
-
-
-
-
-    <!-- {
-    featured item of the day
-    }
-
-    upcoming and the following days
-    <div class="order-row">
-      <div class="order-tile">
-        <a href="order-mbar.html">MBAR FAMILY MEALS</a>
-      </div>
-
-
-      <div class="order-tile">
-        <a href="order-mamnoon.html">MAMNOON FAMILY MEALS</a>
-      </div>
-
-
-      <div class="order-tile">
-        <a href="order-mamnoon-street.html">MAMNOON STREET FAMILY MEALS</a>
-      </div>
-
-
-    </div> -->
 
     <h1>A La Carte</h1>
 
@@ -692,11 +680,11 @@
 
   <div id="snipcart" data-api-key="ZWMzNjdjM2MtOTQyNi00MjU2LTgwZjMtMzlhNmFiZDMwNDBlNjM3MjYyOTQ3OTQ3OTcxNTA1" hidden>
   </div>
-  <script src="https://cdn.snipcart.com/themes/v3.0.14/default/snipcart.js"></script>
+  <!-- <script src="https://cdn.snipcart.com/themes/v3.0.14/default/snipcart.js"></script> -->
 
 
-  <script src='https://app.upserve.com/platform/olo-widget.js?mamnoon-llc-seattle' type='text/javascript'
-    id='upserve-olo-script'></script>
+  <!-- <script src='https://app.upserve.com/platform/olo-widget.js?mamnoon-llc-seattle' type='text/javascript'
+    id='upserve-olo-script'></script> -->
 
 
 
@@ -784,6 +772,9 @@ $.each(likeIncrement, function(key, value) {
   $('.userinfo').prepend('<div>' + key + ' ' + value + '</div>');
 });
 
+console.clear();
+console.log(likeIncrement);
+
 }
 
 $('.addlike').click(function(){
@@ -802,7 +793,7 @@ if(likeIncrement[$(this).data('name')] == 0){
 
 }
 
-console.log(likeIncrement)
+
 
 
 
@@ -813,28 +804,11 @@ $(this).addClass('liked');
 
 likeIncrement.hasOwnProperty($(this).data('name')) ? likeIncrement[$(this).data('name')]++ : likeIncrement[$(this).data('name')] = 1
 
-console.log(likeIncrement)
-
-
-
 showUserInfo();
-
-
-
 
 }
 
-
-
-
-
 });
-
-
-
-
-
-
 
 $('body').on('.addlike.liked', 'click', function(){
 // $('.addlike').click(function(){
@@ -848,10 +822,121 @@ $.each(likeIncrement, function(key, value) {
   $('.userinfo').prepend('<div>' + key + ' ' + value + '</div>');
 });
 
+  $(this).addClass('liked')
+
+});
+
+$('.userinfo').click(function(){
+
+  $(this).toggleClass('expanded');
+
+});
 
 
-$(this).addClass('liked')
 
+$('.map-container button').click(function(){
+
+$(this).parent().toggleClass('expanded');
+
+});
+
+
+  </script>
+
+
+
+<script>
+  // This example requires the Geometry library. Include the libraries=geometry
+  // parameter when you first load the API. For example:
+  // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=geometry">
+    var map;
+    var geocoder; //Added on 27/09/2016
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 47.6145714, lng: -122.3278329},
+      zoom: 8,
+      scaleControl: true
+    });
+
+    bounds = new google.maps.LatLngBounds();
+    google.maps.event.addListenerOnce(map, 'tilesloaded', function(evt) { 
+    bounds = map.getBounds();
+    });
+    marker = new google.maps.Marker({
+      center: {lat: 47.6145714, lng: -122.3278329}
+    });
+    polygon = new google.maps.Polygon({
+    path: area,
+    geodesic: true,
+    strokeColor: '#FFd000',
+    strokeOpacity: 1.0,
+    strokeWeight: 4,
+    fillColor: '#FFd000',
+    fillOpacity: 0.35
+    });
+
+    polygon.setMap(map);	
+
+
+
+    var input = /** @type {!HTMLInputElement} */(
+document.getElementById('pac-input'));
+    var types = document.getElementById('type-selector');
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
+
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.addListener('place_changed', function() {
+marker.setMap(null);
+var place = autocomplete.getPlace();
+var newBounds = new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast()); //Changed
+// removed newBounds = bounds;
+      if (!place.geometry) {
+        geocodeAddress(input.value);//Added on 27/09/2016          
+        //window.alert("Autocomplete's returned place contains no geometry");
+        return;
+      };
+  marker.setPosition(place.geometry.location);
+  marker.setMap(map);
+  newBounds.extend(place.geometry.location);
+  map.fitBounds(newBounds);
+  if (google.maps.geometry.poly.containsLocation(place.geometry.location, polygon)){
+
+    $('.userinfo').addClass('expanded');
+    likeIncrement.address = input.value;
+    showUserInfo();
+
+  } else {
+
+    alert('The address is outside of the area.');  
+
+  };
+
+
+ });
+}
+//Added on 27/09/2016
+//*************************
+function geocodeAddress(addr) {
+geocoder.geocode({'address': addr}, function(results, status) {
+if (status === 'OK') {
+  var newBounds = new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast());
+  marker.setPosition(results[0].geometry.location);
+  marker.setMap(map);
+  newBounds.extend(results[0].geometry.location);
+  map.fitBounds(newBounds);
+  if (google.maps.geometry.poly.containsLocation(results[0].geometry.location, polygon)){
+  // alert('The area contains the address');  
+  $('.userinfo').addClass('expanded');
+    likeIncrement.address = input.value;
+    showUserInfo();
+
+  } else {
+  alert('The address is outside of the area.');  
+  };
+} else {
+alert('Geocode was not successful for the following reason: ' + status);
+}
 });
 
 
@@ -859,7 +944,39 @@ $(this).addClass('liked')
 
 
 
-  </script>
+  };
+
+
+
+
+
+
+
+
+  var area= [
+  {lat: 46.6145714, lng: -122.3278329},
+  {lat: 47.6145714, lng: -121.3278329},
+  {lat: 48.6145714, lng: -122.3278329},
+  {lat: 47.6145714, lng: -123.3278329}
+];
+
+
+
+
+function yourFunction(){
+    // do whatever you like here
+showUserInfo();
+    setTimeout(yourFunction, 5000);
+}
+
+yourFunction();
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwegA6SBLg8wfP47WBd-bj-_ghO9kRTs8&libraries=geometry,places&callback=initMap"
+     async defer></script>
+
+
 
 </body>
 
