@@ -124,3 +124,29 @@ z-index: 10;
 .owl-carousel.testimonials .owl-item img{
   width: auto;
 }
+
+
+.clearlocal{
+  float: right;
+}
+
+
+.addlike{
+  cursor: pointer;
+}
+
+.userinfo{
+  position: fixed;
+  top: 119px;
+  right: 0;
+  background: pink;
+  padding: 100px;
+  width: 100px;
+}
+
+
+
+
+.addlike.liked{
+background: red;
+}
