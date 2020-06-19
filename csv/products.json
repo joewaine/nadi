@@ -1,26 +1,31 @@
 [{
   "id": 1458,
   "name": "baba ganoush",
-  "price": "5.00"
+  "price": "5.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/1.jpg"
 },
 {
   "id": 991458,
   "name": "haloumi",
-  "price": "5.00"
+  "price": "5.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/2.jpg"
 },
 {
   "id": 91458,
   "name": "chicken",
-  "price": "5.00"
+  "price": "5.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/3.jpg"
 },
 {
   "id": 61458,
   "name": "fried vegetables",
-  "price": "5.00"
+  "price": "5.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/4.jpg"
 },
 {
   "id": 31458,
   "name": "labneh",
-  "price": "5.00"
+  "price": "5.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
 }
 ]
