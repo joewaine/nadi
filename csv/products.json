@@ -3,7 +3,11 @@
     "id": 2344365454331458,
     "name": "soup for syria, cookbook",
     "price": "50.00",
-    "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/1.jpg"
+    "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/1.jpg",
+    "data-item-custom1-name": "Time Slot",
+    "data-item-custom1-options": "6:00|6:30|7:00|7:30|8:00",
+    "data-item-custom2-name": "Order Requests/Instructions"
+
   },
 {
   "id": 234531458,
@@ -60,3 +64,4 @@
   "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/10.jpg"
 }
 ]
+
