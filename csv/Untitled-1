@@ -1,0 +1,68 @@
+image: '../assets/img/cav/2.jpg',
+[
+  {
+    "id": 2344365454331458,
+    "name": "soup for syria, cookbook",
+    "price": "50.00",
+    "image": "../assets/img/merch/1.jpg",
+    "data-item-custom1-name": "Time Slot",
+    "data-item-custom1-options": "6:00|6:30|7:00|7:30|8:00",
+    "data-item-custom2-name": "Order Requests/Instructions"
+
+  },
+{
+  "id": 234531458,
+  "name": "soy candle",
+  "price": "15.00",
+    "image": "../assets/img/merch/2.jpg",
+},
+{
+  "id": 54331458,
+  "name": "seattle cooks, cookbook",
+  "price": "35.00",
+    "image": "../assets/img/merch/3.jpg",
+},
+{
+  "id": 65454331458,
+  "name": "merch selection",
+  "price": "165.00",
+    "image": "../assets/img/merch/4.jpg",
+},
+{
+  "id": 4365454331458,
+  "name": "marigold hand sanitizer",
+  "price": "5.00",
+    "image": "../assets/img/merch/5.jpg",
+},
+{
+  "id": 1458,
+  "name": "za'ater",
+  "price": "13.00",
+    "image": "../assets/img/merch/6.jpg",
+},
+{
+  "id": 991458,
+  "name": "mamnoon mask",
+  "price": "8.00",
+    "image": "../assets/img/merch/7.jpg",
+},
+{
+  "id": 91458,
+  "name": "cook books",
+  "price": "8.00",
+    "image": "../assets/img/merch/8.jpg",
+},
+{
+  "id": 61458,
+  "name": "enamel pins",
+  "price": "10.00",
+    "image": "../assets/img/merch/9.jpg",
+},
+{
+  "id": 31458,
+  "name": "t shirts",
+  "price": "25.00",
+    "image": "../assets/img/merch/10.jpg",
+}
+]
+
