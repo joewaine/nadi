@@ -1,62 +1,62 @@
 [
   {
     "id": 2344365454331458,
-    "name": "rose water",
-    "price": "5.00",
-    "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+    "name": "soup for syria, cookbook",
+    "price": "50.00",
+    "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/1.jpg"
   },
 {
   "id": 234531458,
-  "name": "harra",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+  "name": "soy candle",
+  "price": "15.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/2.jpg"
 },
 {
   "id": 54331458,
-  "name": "shakshuka",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+  "name": "seattle cooks, cookbook",
+  "price": "35.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/3.jpg"
 },
 {
   "id": 65454331458,
-  "name": "okra",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+  "name": "merch selection",
+  "price": "165.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/4.jpg"
 },
 {
   "id": 4365454331458,
-  "name": "lavendar okra",
+  "name": "marigold hand sanitizer",
   "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/5.jpg"
 },
 {
   "id": 1458,
-  "name": "baba ganoush",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/1.jpg"
+  "name": "za'ater",
+  "price": "13.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/6.jpg"
 },
 {
   "id": 991458,
-  "name": "haloumi",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/2.jpg"
+  "name": "mamnoon mask",
+  "price": "8.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/7.jpg"
 },
 {
   "id": 91458,
-  "name": "chicken",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/3.jpg"
+  "name": "cook books",
+  "price": "8.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/8.jpg"
 },
 {
   "id": 61458,
-  "name": "fried vegetables",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/4.jpg"
+  "name": "enamel pins",
+  "price": "10.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/9.jpg"
 },
 {
   "id": 31458,
-  "name": "labneh",
-  "price": "5.00",
-  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/pantry/5.jpg"
+  "name": "t shirts",
+  "price": "25.00",
+  "image": "https://affectionate-gates-5cf4d4.netlify.app/img/merch/10.jpg"
 }
 ]
