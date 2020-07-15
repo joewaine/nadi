@@ -1,67 +1,111 @@
-[
-  {
-    "id": 2344365454331458,
-    "name": "soup for syria, cookbook",
-    "price": "50.00",
-    "image": '"./assets/merch/1.jpg",
-    "data-item-custom1-name": "Time Slot",
-    "data-item-custom1-options": "6:00|6:30|7:00|7:30|8:00",
-    "data-item-custom2-name": "Order Requests/Instructions"
-
-  },
-{
-  "id": 234531458,
-  "name": "soy candle",
-  "price": "15.00",
-  "image": '"./assets/merch/2.jpg"
+[{
+  "id": 100001,
+  "name": "mamnoon candle (large)",
+  "price": "44.00",
+  "image": "../assets/merch/candle-large.jpg",
+  "description": "Marigold & Mint natural soy candle",
+  "weight" : "21",
+  "options" : ""
 },
 {
-  "id": 54331458,
-  "name": "seattle cooks, cookbook",
-  "price": "35.00",
-  "image": '"./assets/merch/3.jpg"
+  "id": 100002,
+  "name": "mamnoon candle",
+  "price": "22.00",
+  "image": "../assets/merch/candle.jpg",
+  "description": "Marigold & Mint natural soy candle",
+  "weight" : "10.4",
+  "options" : ""
 },
 {
-  "id": 65454331458,
-  "name": "merch selection",
-  "price": "165.00",
-  "image": '"./assets/merch/4.jpg"
-},
-{
-  "id": 4365454331458,
-  "name": "marigold hand sanitizer",
-  "price": "5.00",
-  "image": '"./assets/merch/5.jpg"
-},
-{
-  "id": 1458,
-  "name": "za'ater",
-  "price": "13.00",
-  "image": '"./assets/merch/6.jpg"
-},
-{
-  "id": 991458,
-  "name": "mamnoon mask",
+  "id": 100003,
+  "name": "mama mask",
   "price": "8.00",
-  "image": '"./assets/merch/7.jpg"
+  "image": "../assets/merch/mask.jpg",
+  "description": "mama mask with signature logo ",
+  "weight" : "1",
+  "options" : ""
 },
 {
-  "id": 91458,
-  "name": "cook books",
+  "id": 100004,
+  "name": "marigold & mint hand sanitzier",
   "price": "8.00",
-  "image": '"./assets/merch/8.jpg"
+  "image": "../assets/merch/sanitizer.jpg",
+  "description": "custom blended scent, 62% ethyl alcohol",
+  "weight" : "2",
+  "options" : ""
 },
 {
-  "id": 61458,
-  "name": "enamel pins",
-  "price": "10.00",
-  "image": '"./assets/merch/9.jpg"
-},
-{
-  "id": 31458,
-  "name": "t shirts",
+  "id": 100005,
+  "name": "aleppo cookbook",
   "price": "25.00",
-  "image": '"./assets/merch/10.jpg"
-}
-]
-
+  "image": "../assets/merch/aleppo-cookbook.jpg",
+  "description": "celebrating the legendary cuisine of Syria",
+  "weight" : "40"
+},
+{
+  "id": 100006,
+  "name": "aleppo pepper",
+  "price": "8.00",
+  "image": "../assets/merch/aleppo-pepper.jpg",
+  "description": "villa jerada flavorful chili flake from the levant",
+  "weight" : "6.6"
+},
+{
+  "id": 100007,
+  "name": "sumac",
+  "price": "8.00",
+  "image": "../assets/merch/sumac.jpg",
+  "description": "villa jerada cherry & citrus notes",
+  "weight" : "6.6"
+},
+{
+  "id": 100008,
+  "name": "house za'atar blend",
+  "price": "15.00",
+  "image": "../assets/merch/zaatar.jpg",
+  "description": "signature za'atar blend packaged at mamnoon",
+  "weight" : "9.7"
+},
+{
+  "id": 100009,
+  "name": "soup for syria book",
+  "price": "30.00",
+  "image": "../assets/merch/soup-for-syria.jpg",
+  "description": "favorite recipes to help Syrian refugees ",
+  "weight" : "38"
+},
+{
+  "id": 100010,
+  "name": "'Seattle Cooks' Cookbook",
+  "price": "32.95",
+  "image": "../assets/merch/seattle-cooks.jpg",
+  "description": "celebration of iconic chefs in Seattle & recipes",
+  "weight" : "35"
+},
+{
+  "id": 100011,
+  "name": "mamnoon means thankful unisex tee",
+  "price": "20.00",
+  "image": "../assets/merch/mamnoon-white-t.jpg",
+  "description": "a thank you to the healthcare workers of Seattle",
+  "weight" : "1",
+  "options" : "S|M|L|XL"
+},
+{
+  "id": 100012,
+  "name": "red mamnoon kids tee",
+  "price": "20.00",
+  "image": "../assets/merch/mamnoon-kids-t.jpg",
+  "description": "red mamnoon kids tee w/ logo",
+  "weight" : "1",
+  "options" : "2T|4T"
+},
+{
+  "id": 100012,
+  "name": "red mamnoon womens tee",
+  "price": "25.00",
+  "image": "../assets/merch/mamnoon-womens-t.jpg",
+  "description": "red mamnoon w/ logo ",
+  "weight" : "1",
+  "options" : "S|M|L"
+}]
